@@ -36,12 +36,24 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    
     <TextView
         android:id="@+id/tvDegree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Degree"
+        android:textSize="20sp"
         app:layout_constraintLeft_toRightOf="@id/gl_v_0.03"
+        app:layout_constraintTop_toBottomOf="@id/gl_h_0.20"/>
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tvDegree"
         app:layout_constraintTop_toBottomOf="@id/gl_h_0.20"/>
 
     <TextView
@@ -50,6 +62,10 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/tvDegree"
         app:layout_constraintLeft_toRightOf="@id/gl_v_0.03"
+        android:textSize="20sp"
+
+        android:layout_marginTop="10dp"
+
         android:hint="temp"/>
 
     <TextView
@@ -58,22 +74,32 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/tvTemp"
         app:layout_constraintLeft_toRightOf="@id/gl_v_0.03"
+        android:textSize="20sp"
+
+        android:layout_marginTop="10dp"
+
         android:hint="Pressure"/>
 
     <TextView
         android:id="@+id/tvHumidity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/tvTemp"
+        app:layout_constraintTop_toBottomOf="@id/tvPressure"
         app:layout_constraintLeft_toRightOf="@id/gl_v_0.03"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
         android:hint="Humidity"/>
 
     <TextView
         android:id="@+id/tvSpeed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/tvTemp"
+        app:layout_constraintTop_toBottomOf="@id/tvHumidity"
         app:layout_constraintLeft_toRightOf="@id/gl_v_0.03"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+
+
         android:hint="Speed"/>
     <TextView
         android:id="@+id/tvRain"
@@ -81,6 +107,19 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/tvSpeed"
         app:layout_constraintLeft_toRightOf="@id/gl_v_0.03"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+
+        android:hint="Rain"/>
+
+    <TextView
+        android:id="@+id/tvClouds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvRain"
+        app:layout_constraintLeft_toRightOf="@id/gl_v_0.03"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
         android:hint="Rain"/>
 
 

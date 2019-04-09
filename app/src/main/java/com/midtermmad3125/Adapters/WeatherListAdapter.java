@@ -40,7 +40,7 @@ public class WeatherListAdapter extends RecyclerView.Adapter<WeatherListAdapter.
     @Override
     public void onBindViewHolder(@NonNull WeatherViewHolder weatherViewHolder, int i) {
         weatherViewHolder.tvDateTime.setText(getDateFromTimeStamp(weatherList.get(i).getDt()));
-        weatherViewHolder.tvMin.setText(String.valueOf(weatherList.get(i).getTemp().getMin()+ (char) 0x00B0));
+        weatherViewHolder.tvMin.setText(String.valueOf(weatherList.get(i).getTemp().getMin()+(char) 0x00B0));
         weatherViewHolder.tvMax.setText(String.valueOf(weatherList.get(i).getTemp().getMax())+(char) 0x00B0);
         weatherViewHolder.tvWeather.setText(weatherList.get(i).getWeather().get(0).getMain());
 
