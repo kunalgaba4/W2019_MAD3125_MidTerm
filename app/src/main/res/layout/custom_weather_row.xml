@@ -20,7 +20,7 @@
         android:layout_below="@id/tvDateTime"
         android:text="Min"
         android:layout_marginTop="10dp"
-        android:textSize="15sp" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/tvMax"
@@ -29,7 +29,7 @@
         android:layout_below="@id/tvMin"
         android:text="Max"
         android:layout_marginTop="10dp"
-        android:textSize="15sp" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/tvWeather"
@@ -42,7 +42,8 @@
         android:layout_toLeftOf="@id/arrow_icon"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="40dp"
-        android:textSize="15sp" />
+        android:textStyle="bold"
+        android:textSize="20sp" />
     <ImageView
         android:id="@+id/arrow_icon"
         android:layout_alignParentRight="true"
@@ -56,7 +57,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_below="@id/tvMax"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="4dpdp"
         android:background="#E0E0E0">
     </View>
 
