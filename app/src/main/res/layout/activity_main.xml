@@ -5,4 +5,90 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.MainCityActivity"/>
+    tools:context=".ui.MainCityActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_v_0.03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_h_0.65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.60" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_h_0.20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.22" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/loginscreentopbg"
+        app:layout_constraintBottom_toTopOf="@id/gl_h_0.20"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvCityName"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:hint="City Name"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toRightOf="@id/gl_v_0.03"
+        app:layout_constraintTop_toBottomOf="@id/gl_h_0.20" />
+
+    <TextView
+        android:id="@+id/tvLong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/gl_v_0.03"
+        app:layout_constraintTop_toBottomOf="@id/tvCityName"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:hint="Longitude"/>
+
+    <TextView
+        android:id="@+id/tvLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/tvLong"
+        app:layout_constraintTop_toBottomOf="@id/tvCityName"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:hint="Longitude"/>
+
+    <TextView
+        android:id="@+id/tvPopulation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLong"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:hint="Population"/>
+
+
+    <Button
+        android:id="@+id/btnDisplayWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/gl_h_0.65"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Display Weather"/>
+
+
+
+</android.support.constraint.ConstraintLayout>

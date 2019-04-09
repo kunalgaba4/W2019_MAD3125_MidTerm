@@ -1,22 +1,5 @@
 package com.midtermmad3125.Modals;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 public class WeatherModal {
 
     private City city;
